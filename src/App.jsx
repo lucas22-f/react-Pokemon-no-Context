@@ -3,6 +3,7 @@ import { Container, Table } from "react-bootstrap"
 import PokemonDetail from "./componets/PokemonDetail";
 import PokemonRow from "./componets/PokemonRow";
 import PokemonSearch from "./componets/PokemonSearch";
+import pokeLogo from "./pokeLogo.png"
 
 function App() {
   const [data, setData] = useState([]);
@@ -17,7 +18,14 @@ function App() {
   return (
     <>
       <Container>
-        <h1>Pokemon Finder</h1>
+
+      <Container className="d-flex align-items-center justify-content-between">
+        <img src={pokeLogo} alt="xd" />
+            <Row>
+                <h1 >Pokemon Finder</h1> 
+            </Row>
+
+        </Container>
         <div>
             <PokemonSearch filter={filter} setFilter={setFilter}></PokemonSearch>
           
