@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Container, Table } from "react-bootstrap"
+import { Container, Table, Row} from "react-bootstrap"
 import PokemonDetail from "./componets/PokemonDetail";
 import PokemonRow from "./componets/PokemonRow";
 import PokemonSearch from "./componets/PokemonSearch";
